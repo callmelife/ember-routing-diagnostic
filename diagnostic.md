@@ -6,21 +6,23 @@ Record your responses inside the fenced code blocks below each question.
     and what are the main task(s) you perform inside an Ember Route?
 
     ```md
-    <!-- your response here -->
+    Router: Create the paths (i.e. 'routes') that will be used to manipulate data throughout the application. These routes are in the form of a URL path.
+
+    Route: Used to direct information throughout the application. Routes primarily consist of directions for the information to flow through.
     ```
 
 1.  What is the command to generate a route named `boston` nested under
     `campus`?
 
     ```md
-    <!-- your response here -->
+    'ember generate route campus/boston'
     ```
 
 1.  Suppose you have a nested route at the URL `/campus/boston`. How would you
     use the `link-to` helper to generate an appropriate link?
 
     ```md
-    <!-- your response here -->
+    {{#link-to 'boston'}} Here's the link to Boston! {{/link-to}}
     ```
 
 1.  Explain **at least** two differences between the following two route
@@ -35,7 +37,9 @@ Record your responses inside the fenced code blocks below each question.
     ```
 
     ```md
-    <!-- your response here -->
+    1. In the first example, the 'product_id' route is nested under the 'products' route function as opposed to the second example which is not a nested route but has an extended URL path.
+
+    2. The first URL example does not contain the nested path (i.e. the 'products' part) and the second example contains a path that isnt defined as a function and has an unnecissarily long URL (i.e. the 'products' part.)
     ```
 
 1.  Suppose we have the following route definition:
@@ -48,11 +52,11 @@ Record your responses inside the fenced code blocks below each question.
     value `'123'` inside a Route?
 
     ```md
-    <!-- your response here -->
+    this.route('movie', { path: '/movies/123' })
     ```
 
 1.  Inside a template, how do we reference data provided by a Route?
 
     ```md
-    <!-- your response here -->
+    Via the model hook? I'm not exactly understanding the question without an example, I guess?
     ```
